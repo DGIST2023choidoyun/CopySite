@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.big-box {
+    width: 200px;
+    height: 200px;
+    background-color: #4caf50;
+    position: relative;
+    animation: resizeBox 4s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-box {
+    width: 300px;
+    height: 50px;
+    background-color: #ff5722;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+}
+
+@keyframes resizeBox {
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+    }
+}

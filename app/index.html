@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ha Jung Woo X Super Normal</title>
+		
+	<link rel="stylesheet" href="./my-desktop.css">
+	<link rel="stylesheet" href="./my-mobile.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+</head>
+<body>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+	
+	<script>
+		const firebaseConfig = {
+			apiKey: "AIzaSyAlE47Ja83m85G7zMPTclMWygdqz8NlCC8",
+			authDomain: "copy-site-c4ecf.firebaseapp.com",
+			projectId: "copy-site-c4ecf",
+			storageBucket: "copy-site-c4ecf.appspot.com",
+			messagingSenderId: "933622810776",
+			appId: "1:933622810776:web:19234211a2da927447e8ed",
+			measurementId: "G-7S54W70DDK"
+		};
+		firebase.initializeApp(firebaseConfig);
+		const storage = firebase.storage();
+
+	</script>
+	<script src = "./global.js"></script>
+	<script src = "./util.js"></script>
+	<script src = "./my.js"></script>
+	<script src = "./event.js"></script>
+	<div class="background">
+		<div class="title-container">
+			<!-- <div class="title-norm">GALLERY</div> -->
+		</div>
+		<div class="display-box-wrapper">
+			<div class="display-box">
+				<div class="display-box-bar">
+					<div class="display-box-nametag">Ha Jung woo</div>
+					<div class="display-box-info-container">
+						<div class="display-box-info"></div>
+					</div>
+					<div class="display-box-info-container">
+						<div class="display-box-info"></div>
+					</div>
+					<div class="display-box-info-container">
+						<div class="display-box-info"></div>
+					</div>
+					<div class="display-box-info-container">
+						<div class="display-box-info"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bar-norm">
+			<div class="bar-container">
+				<div class="bar"></div>
+			</div>
+		</div>
+		<div class="drag-zone"></div>
+	</div>
+</body>
+</html>
